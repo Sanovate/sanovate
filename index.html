@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanovate | Democratizing Medical Competitions</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Inter for clean, modern, legible typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <img src="Images/SanovateLogo.png" alt="Sanovate Logo" class="nav-logo img-transparent">
+            </a>
+            <div class="nav-links">
+                <a href="#mission">Our Mission</a>
+                <a href="#events">Competitions</a>
+                <a href="#register" class="btn-nav">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="Images/SanovateLogotype.png" alt="Sanovate Logotype" class="hero-logotype img-transparent">
+            <h1 class="hero-title">Democratizing Medical Competitions.</h1>
+            <p class="hero-subtitle">Healthcare shouldn't depend on your school's electives. Open to all students.</p>
+            <div class="hero-cta">
+                <a href="#register" class="btn btn-primary">Join the Movement</a>
+                <a href="#events" class="btn btn-secondary">View Competitions</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Super In-Depth Mission Section -->
+    <section id="mission" class="mission-section">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-text">
+                    <h2 class="section-heading">Our Mission</h2>
+                    <h3>Bridging the Gap in Healthcare Education</h3>
+                    <p>For too long, access to premier healthcare and medical competitions has been gated behind specific Career and Technical Education (CTE) pathways. If a school doesn't offer dedicated medical electives, its students are often locked out of vital opportunities to test their skills, build their resumes, and explore their passions in the medical field.</p>
+                    <p>Sanovate was founded to dismantle these systemic barriers. Our organization is built on a singular, unwavering belief: <strong>every student with a passion for medicine deserves the platform to innovate, compete, and excel.</strong> We set out to build a competition ecosystem that mirrors the rigor of established national organizations but is fundamentally accessible to everyone.</p>
+                    <p>By removing the prerequisite of specific school curriculums, we are cultivating a new generation of healthcare leaders, researchers, and clinicians. Sanovate is more than a competition; it is an inclusive community where ambition meets opportunity, allowing students from all backgrounds to prove their potential on an equal playing field.</p>
+                </div>
+                <div class="mission-visual">
+                    <div class="visual-box">
+                        <img src="Images/SanovateLogo.png" alt="Sanovate Dove V" class="mission-logo img-transparent">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitions Section (No Timeline, Categories Only) -->
+    <section id="events" class="events-section bg-light">
+        <div class="container">
+            <h2 class="section-heading center-text">Competition Categories</h2>
+            <p class="section-subheading center-text">Challenge yourself across multiple disciplines of modern medicine and healthcare.</p>
+            
+            <div class="cards-grid">
+                <div class="event-card">
+                    <div class="card-icon">🩺</div>
+                    <h4>Clinical Skills</h4>
+                    <p>Test your practical medical knowledge through simulated patient encounters, diagnostic reasoning, and emergency response scenarios.</p>
+                </div>
+                <div class="event-card">
+                    <div class="card-icon">🔬</div>
+                    <h4>Medical Innovation</h4>
+                    <p>Design and present groundbreaking solutions to contemporary healthcare challenges, combining technology, engineering, and medical science.</p>
+                </div>
+                <div class="event-card">
+                    <div class="card-icon">🌍</div>
+                    <h4>Public Health</h4>
+                    <p>Analyze widespread health trends, epidemiology, and devise comprehensive community-level interventions to improve global health outcomes.</p>
+                </div>
+                <div class="event-card">
+                    <div class="card-icon">⚖️</div>
+                    <h4>Healthcare Debate</h4>
+                    <p>Engage in rigorous, well-researched discourse on the most pressing ethical, legal, and economic dilemmas facing modern healthcare systems.</p>
+                </div>
+                <div class="event-card">
+                    <div class="card-icon">🧠</div>
+                    <h4>Anatomy & Physiology</h4>
+                    <p>Demonstrate mastery of the human body's structures and functions through advanced theoretical testing and anatomical identification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="register-section">
+        <div class="container form-container">
+            <h2 class="section-heading">Get Involved</h2>
+            <p>Ready to compete or lead? Fill out the form below to join Sanovate.</p>
+            
+            <form id="registrationForm" class="sanovate-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Jane Doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Student Email</label>
+                    <input type="email" id="email" name="email" required placeholder="student@lcps.org">
+                </div>
+
+                <div class="form-group">
+                    <label for="highSchool">High School Name</label>
+                    <input type="text" id="highSchool" name="highSchool" required placeholder="e.g., Independence High School">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="grade">Grade Level</label>
+                        <select id="grade" name="grade" required>
+                            <option value="" disabled selected>Select Grade</option>
+                            <option value="9">9th Grade</option>
+                            <option value="10">10th Grade</option>
+                            <option value="11">11th Grade</option>
+                            <option value="12">12th Grade</option>
+                        </select>
+                    </div>
+                    <div class="form-group half">
+                        <label for="role">Role Interest</label>
+                        <select id="role" name="role" required>
+                            <option value="" disabled selected>Select Role</option>
+                            <option value="competitor">Competitor</option>
+                            <option value="leadership">Leadership / Organizer</option>
+                            <option value="faculty">Faculty Advisor</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message / Questions (Optional)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="How would you like to contribute?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn">Submit Registration</button>
+            </form>
+            <div id="formSuccess" class="hidden">Thank you! Your submission has been received.</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="Images/SanovateLogotype.png" alt="Sanovate" class="footer-logotype img-transparent">
+                <p>Democratizing medical competitions for all students.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Contact Us</h4>
+                <a href="mailto:sanovateva@gmail.com">sanovateva@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Disclaimer: Sanovate is an independent, student-led organization serving students. It is not officially affiliated with Loudoun County Public Schools.</p>
+            <p>&copy; 2026 Sanovate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
