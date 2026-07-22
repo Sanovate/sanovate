@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register | Sanovate</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/SanovateFavicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="Images/SanovateLogoTransparent.png" alt="Sanovate Logo" class="nav-logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="mission.html">Our Mission</a>
+                <a href="competitions.html">Competitions</a>
+                <a href="register.html" class="btn-nav">Register</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Join Sanovate</h1>
+            <p>Take the next step in your medical journey. Register below to compete, lead, or advise.</p>
+        </div>
+    </header>
+
+    <section class="register-section">
+        <div class="container form-container">
+            <form id="registrationForm" class="sanovate-form">
+                
+                <h3 class="form-section-title"><i class="fa-solid fa-user"></i> Personal Information</h3>
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+                    </div>
+                    <div class="form-group half">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">School Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="student@example.org">
+                </div>
+
+                <h3 class="form-section-title"><i class="fa-solid fa-school"></i> Academic Details</h3>
+                <div class="form-group">
+                    <label for="highSchool">High School Name</label>
+                    <input type="text" id="highSchool" name="highSchool" required placeholder="e.g., Independence High School">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="grade">Grade Level</label>
+                        <select id="grade" name="grade" required>
+                            <option value="" disabled selected>Select Grade</option>
+                            <option value="9">9th Grade</option>
+                            <option value="10">10th Grade</option>
+                            <option value="11">11th Grade</option>
+                            <option value="12">12th Grade</option>
+                            <option value="faculty">Faculty/Educator</option>
+                        </select>
+                    </div>
+                    <div class="form-group half">
+                        <label for="role">Desired Role</label>
+                        <select id="role" name="role" required>
+                            <option value="" disabled selected>Select Role</option>
+                            <option value="competitor">Competitor</option>
+                            <option value="leadership">Chapter Leader / Organizer</option>
+                            <option value="faculty">Faculty Advisor</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h3 class="form-section-title"><i class="fa-solid fa-clipboard-list"></i> Experience & Motivation</h3>
+                <div class="form-group">
+                    <label for="interests">Which competition categories interest you most?</label>
+                    <input type="text" id="interests" name="interests" placeholder="e.g., Medical Innovation, Public Health">
+                </div>
+
+                <div class="form-group">
+                    <label for="motivation">Why do you want to join Sanovate?</label>
+                    <textarea id="motivation" name="motivation" rows="4" placeholder="Tell us about your passion for medicine and what you hope to achieve..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn">Submit Registration <i class="fa-solid fa-paper-plane" style="margin-left: 5px;"></i></button>
+            </form>
+            <div id="formSuccess" class="hidden">
+                <i class="fa-solid fa-circle-check" style="font-size: 3rem; color: #5ce1e6; margin-bottom: 15px;"></i>
+                <h3>Registration Received!</h3>
+                <p>Thank you for your interest in Sanovate. We will be in touch shortly.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="Images/SanovateLogotypeTransparent.png" alt="Sanovate" class="footer-logotype">
+                <p>Democratizing medical competitions for all students.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Contact Us</h4>
+                <a href="mailto:sanovateva@gmail.com">sanovateva@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Disclaimer: Sanovate is an independent, student-led organization. We are not officially affiliated with any school district.</p>
+            <p>&copy; 2026 Sanovate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
